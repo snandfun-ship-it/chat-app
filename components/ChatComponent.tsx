@@ -15,7 +15,7 @@ import type { StreamChat } from 'stream-chat';
 import 'stream-chat-react/dist/css/v2/index.css';
 import { useSearchParams } from 'next/navigation';
 
-const apiKey = 'cnfe3kpxhv5h';
+const apiKey = process.env.API_KEY as string;
 
 export default function PrivateChat(): JSX.Element {
   const [userId, setUserId] = useState<string | null>(null);

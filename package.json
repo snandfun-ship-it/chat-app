@@ -1,7 +1,7 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "description": "A chat app built with Next.js and Stream Chat.",
   "homepage": "https://github.com/snandfun-ship-it/ChatApp#readme",
   "bugs": {
     "url": "https://github.com/snandfun-ship-it/ChatApp/issues"
@@ -12,17 +12,27 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "^16.0.1",
-    "react": "^19.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "stream-chat-react": "^13.11.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.2"
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^24.10.0",
+    "@types/react": "^18.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3"
   }
 }
